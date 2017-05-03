@@ -1,0 +1,12 @@
+
+
+.feature i {
+    background: #097fd4;
+}
+
+.no-touch .feature:hover i,
+	.no-touch .feature:active i,
+	.no-touch .feature:focus i {
+        
+        box-shadow: 0 0 0 0 #097fd4;
+}

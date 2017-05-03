@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+ <html class="no-js"> 
+    <head>
+        <meta charset="utf-8">
+        <title>PROSSEA: Soluciones M2M l IOT</title>
+    	<meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <meta name="keywords" content="rastreo satelital, satelite, GPS, rastreo GPS, rastreo, tecnologia, flotillas, administracion flotillas, tracking,s"/>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+        
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/templatemo_misc.css">
+        <link rel="stylesheet" href="css/templatemo_style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+        <!-- Add fancyBox main JS and CSS files -->
+		<link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css?v=2.1.5" media="screen" />
+		
+        <script src="js/vendor/jquery-1.11.0.min.js"></script>
+        <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        
+    
+      <!-- Google analytics-->
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78916131-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    
+    </head>
+    
+    <body>
+    
+    <style type="text/css">
+		.fancybox-custom .fancybox-skin {
+		 box-shadow: 0 0 50px #222;
+		}
+	</style>
+
+
+        <div class="site-main" id="sTop">
+            <div class="site-header">
+            
+                <div class="container">
+                    <div class="row">
+                    
+                
+                        <div class="col-md-3 text-left">
+                            <div class="idi">
+                               <a href="#" class="idioma2 fa-flickr">Español</a>
+                               <a href="indexIngles.html" class="idioma fa-thumbs-down">English</a>            
+                            </div>
+                        </div> <!-- /.col-md-12 -->
+                    
+                    
+                        <div class="col-md-6 col-sm-12 text-center">
+                            <ul class="social-icons">
+                                <li><a href="https://www.facebook.com/ProsseaC/" target="_blank" class="fa fa-facebook"></a></li>
+                                <li><a href="https://twitter.com/ProsseaC" target="_blank" class="fa fa-twitter"></a></li>
+                                <li><a href="https://www.linkedin.com/in/prossea-c-623548a8?trk=nav_responsive_tab_profile_pic" target="_blank" class="fa fa-linkedin"></a></li>
+                                <li><a href="https://www.youtube.com/watch?v=W12U6DKL4H0" target="_blank" class="fa fa-youtube"></a></li>                
+                            </ul>
+                        </div> <!-- /.col-md-12 -->
+                        
+                         
+                         <div class="col-md-offset-1 col-md-2 text-right">
+                            <div class="idi">
+                             <a href="simulador.html" class="car fa-file">Cotización</a>          
+                            </div>
+                        </div>  <!--/.col-md-12 -->
+                        
+                        
+                    </div> <!-- /.row -->
+                </div> <!-- /.container -->
+                
+                
+                
+           <div class="main-header">
+                    <div class="container">
+                        <div id="menu-wrapper">
+                            <div class="row">
+                                    <div class="logo-wrapper col-md-2 col-sm-2">
+                                       <h1>
+                                           <a href="#" > <img src="images/logos/logo prossea.png" class="gg" alt="logo prossea"> </img></a>
+                                        </h1>
+                                    </div>  <!--/.logo-wrapper -->
+                                    
+                                <div class="col-md-10 col-sm-10 main-menu text-right">
+                                    <div class="toggle-menu visible-sm visible-xs"><i class="fa fa-bars"></i></div>
+                                    <ul class="menu-first">
+                                        <!--<li class="active"><a href="#">Inicio</a></li>-->
+                                        <li><a href="#services">Servicios</a></li>
+                                        <!--<li><a href="#our-team">Nosotros</a></li>-->
+                                        <li><a href="#software">Software</a></li>
+                                        <li><a href="#portfolio">Equipos</a></li>
+                                        <li><a href="#sims">Sims</a></li>
+                                        <li><a href="distribuidor.html">Distribuidores</a></li>
+                                        <li><a href="empleo.html">Bolsa empleo</a></li>
+                                        <li><a href="#contact">Contacto</a></li> 
+                                                                   
+                                    </ul>                                    
+                                </div> <!-- /.main-menu -->
+                            </div> <!-- /.row -->
+                        </div> <!-- /#menu-wrapper  -->                   
+                    </div> <!-- /.container -->
+                </div> <!-- /.main-header -->
+            </div> <!-- /.site-header -->
+            
+            
+            
+          											 <!-- IMAGENES 1ER SECCION -->
+            
+            <div class="site-slider">
+                <div class="slider">
+                    <div class="flexslider">
+                        <ul class="slides">
+                                <li>
+                                    <div class="overlay"> </div>
+                                    <img src="images/slide/trabajo.jpg" alt="trabajo profesional">
+                                    <div class="slider-caption visible-md visible-lg">
+                                        <h2>Trabajo Profesional</h2>
+                                        <p>Alta calidad en codigo y diseño</p>
+                                        <a href="#software" class="slider-btn">Software</a>
+                                    </div>
+                                 </li>
+                            <li>
+                                <div class="overlay"></div>
+                                <img src="images/slide/calidad equipos.jpg" alt="calidad equipos">
+                                <div class="slider-caption visible-md visible-lg">
+                                    <h2>Calidad en equipos</h2>
+                                    <p>Mejores equipos en el mercado</p>
+                                    <a href="#portfolio" class="slider-btn">Equipos</a>
+                                </div>
+                            </li>
+                                <li>
+                                    <div class="overlay"></div>
+                                    <img src="images/slide/soporte clientes.jpg" alt="soporte clientes">
+                                    <div class="slider-caption visible-md visible-lg">
+                                        <h2>Soporte a clientes</h2>
+                                        <p>Fácil y rapido 24/7</p>
+                                        <a href="#contact" class="slider-btn">soporte </a>
+                                    </div>
+                                </li>
+                        </ul>
+                    </div> <!-- /.flexslider -->
+                </div> <!-- /.slider -->
+            </div> <!-- /.site-slider -->
+        </div> <!-- /.site-main -->
+
+
+
+												<!--SERVICIOS-->
+                                              
+
+
+        <div class="content-section servf" id="services">
+            <div class="container">
+            
+            
+                <div class="row">
+                    <div class="heading-section col-md-12 text-center">
+                        <h2>Nuestros Servicios</h2>
+                        <p>Ofrecemos soluciones tecnológicas para facilitar la vida de las personas y las empresas: Software, Soluciones IOT/M2M y asesoría técnica.  </p>
+                    </div> <!-- /.heading-section -->
+                </div> <!-- /.row -->
+                
+                
+                
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="service-item" id="service-1">
+                        
+                         <a href="#software">
+                            <div class="service-icon">
+                             <i class="fa fa-file-code-o"></i>
+                            </div> <!-- /.service-icon -->
+                            
+                           <div class="service-content">
+                         	  <br> <i class="fa fa-file-code-o fa-3x"></i>
+                                <div class="inner-service">
+                                   <h3>software</h3>
+                      <p>Desarrollamos Cloud software adaptables a las necesidades de las empresas de diversos sectores de México y Latinoamérica</p> 
+                                </div></a>
+                            </div> <!-- /.service-content -->
+                        </div> <!-- /#service-1 -->
+                    </div> <!-- /.col-md-3 -->
+                    
+                    
+                    
+                    <div class="col-md-3 col-sm-6">
+                        <div class="service-item" id="service-2">
+                        
+                            <a href="#portfolio">
+                            <div class="service-icon">
+                                <i class="fa fa-paper-plane-o"></i>
+                            </div> <!-- /.service-icon -->
+                            
+                              <div class="service-content">
+                             <br> <i class="fa fa-paper-plane-o"></i>
+                                <div class="inner-service">
+                                   <h3>EQUIPOS GPS</h3>
+             <p>Amplia gama de dispositivos GPS para localizar, rastrear vehículos y personas (GPS, candados, DVR, cámaras, sensores, accesorios)</p> 
+                                </div> </a>
+                            </div> <!-- /.service-content -->
+                        </div> <!-- /#service-1 -->
+                    </div> <!-- /.col-md-3 -->
+                    
+                    
+                    <div class="col-md-3 col-sm-6">
+                        <div class="service-item" id="service-3">
+                        
+                         <a href="#sims"> 
+                            <div class="service-icon">
+                                <i class="fa fa-institution"></i>
+                            </div> <!-- /.service-icon -->
+                            
+                              <div class="service-content"> 
+                            <br>   <i class="fa fa-institution"></i>
+                                 <div class="inner-service"> 
+                                 <h3>Soluciones M2M</h3>
+                                   <p>Conectividad de sus equipos a nivel mundial a través de tarjetas M2M con planes de datos adaptados a cada necesidad</p> 
+                                </div> </a>
+                            </div> <!-- /.service-content -->
+                        </div> <!-- /#service-1 -->
+                    </div> <!-- /.col-md-3 -->
+                    
+                    
+                    
+                    <div class="col-md-3 col-sm-6">
+                        <div class="service-item" id="service-4">
+                        
+                        <a href="#contact"> 
+                            <div class="service-icon">
+                                <i class="fa fa-flask"></i>
+                            </div> <!-- /.service-icon -->
+                            
+                             <div class="service-content">
+                              <br><i class="fa fa-flask fa-3x"></i>
+                                <div class="inner-service">
+                                   <h3>soporte técnico</h3>
+                                   <p>Asesoría Técnica en el momento que la necesites. Técnicos Disponibles las 24 hrs del día los 365 días del año para cualquier eventualidad.</p>  
+                                </div> </a>
+                              
+                            </div> <!-- /.service-content -->
+                        </div> <!-- /#service-1 -->
+                    </div> <!-- /.col-md-3 -->
+                    <br> <br> <br> <br><br> <br> <br> <br><br> <br> <br> <br><br> <br> <br> <br>
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+        </div> <!-- /#services -->
+        
+        
+        
+        										<!--QUIENES SOMOS-->
+
+        <div class="content-section misionf" id="our-team">
+            <div class="container">
+               
+               <!-- <div class="row">
+                    <div class="heading-section col-md-11 col-md-11 text-center">
+                        <h2>QUIENES SOMOS</h2>
+                        <p>Somos una empresa dedicada a facilitar la vida de las personas con soluciones tecnologicas.</p>
+                    </div> <!-- /.heading-section
+                </div> <!-- /.row -->
+                
+                
+                <div class="row ">
+                
+                    <div class="team-member col-md-4 col-sm-6 text-center">
+                        <h2 class="vision">Misión</h2>
+                        <p class="mision">Facilitar la vida de las personas con soluciones tecnológicas, a través del mejor equipo de profesionales                           altamente competitivo, motivado y visionario.</p>
+                    </div> <!-- /.team-member -->
+                    
+                    
+                      <div class="team-member col-md-4 col-sm-6 text-center">
+                        <h2 class="vision">Visión</h2>
+                        <p class="mision">Posicionar a PROSSEA como la empresa número uno en la innovación, creación y desarrollo de productos y                           servicios tecnológicos.</p>
+                    </div> <!-- /.team-member -->
+                    
+                    
+                     <div class="team-member col-md-4 col-sm-6 text-center">
+                        <h2 class="vision">Valores</h2>
+                        <p class="mision2 fa-stack-overflow">Trabajo en equipo</p>
+                        <p class="mision2 fa-stack-overflow">Creatividad</p>
+                        <p class="mision2 fa-stack-overflow">Integridad</p>
+                        <p class="mision2 fa-stack-overflow">Profesionalismo</p>
+                         <br> <br>
+                    </div> <!-- /.team-member -->
+                   
+                    <!-- /.QUIENES SOMOS -->
+                     </div> <!-- /.row -->
+            </div> <!-- /.container -->
+        </div> <!-- /#services -->
+
+
+
+
+             											   <!--SOFTWARE-->
+
+        <div class="content-section softf" id="software">
+            <div class="container">
+                <div class="row">
+                    <div class="heading-section col-md-12 text-center">
+                        <h2>SOFTWARE</h2>
+                        <p>Alta calidad en codigo y diseño</p>
+                    </div> <!-- /.heading-section -->
+                </div> <!-- /.row -->
+                
+                
+                <div class="row">
+                    <div class="portfolio-item col-md-4 col-md-offset-1 col-sm-6">
+                    <a href="http://www.transpondergps.com.mx/" target="_blank">
+                         <div class="portfolio-thumb">
+                            <img src="images/logos/transponder.png" alt="transponder">
+                            <div class="portfolio-overlay">
+                                <h3>Transponder GPS</h3>
+                                <p class="equi">Plataforma de rastreo GPS y telemetría amigable e intuitiva para proveedores de servicios, totalmente personalizable con funciones que te ayudarán a satisfacer las necesidades de tus clientes.</p><br>
+                                
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb --> </a>
+                    </div> <!-- /.portfolio-item -->
+                    
+                    
+                    <div class="portfolio-item col-md-4 col-md-offset-1 col-sm-6">
+                    <a href="http://www.titaniumerp.net/" target="_blank">     
+                    	<div class="portfolio-thumb">
+                            <img src="images/logos/titanium.png" alt="titanium">
+                            <div class="portfolio-overlay">
+                               <h3>Titanium ERP </h3>
+                                <p>Software para administración de flotillas en el cual podrás gestionar y optimizar las operaciones logísticas diarias de tus unidades.</p>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb --></a><br> <br>
+                    </div> <!-- /.portfolio-item -->
+                    
+                    
+                 
+                    
+                  <!-- <div class="portfolio-item col-md-4 col-sm-6">
+                       <div class="portfolio-thumb">
+                            <img src="images/control.png" alt="">
+                            <div class="portfolio-overlay">
+                                <h3>CONTROL CENTER</h3>
+                                 <p>Plataforma que simplifica los procesos de administración de tarjetas SIMs y reduce costos</p>
+                                <br>
+                            </div> <!-- /.portfolio-overlay 
+                        </div> <!-- /.portfolio-thumb 
+                    </div> <!-- /.portfolio-item -->
+                    
+                    
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+        </div> <!-- /#portfolio -->
+        
+        
+											
+                                            <!--PROTAFOLIO / EQUIPOS GPS-->
+
+                                            
+        <div class="content-section" id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="heading-section col-md-12 text-center">
+                        <h2>EQUIPOS GPS</h2>
+                        <p>La más avanzada tecnología en equipos GPS del mercado.</p>
+                    </div> <!-- /.heading-section -->
+                </div> <!-- /.row -->
+                
+                <div class="row">
+                    <div class="portfolio-item col-md-4 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/avl.jpg" alt="dispositivos AVL">
+                            <div class="portfolio-overlay">
+                                <h3>AVL</h3>
+                                <p class="equi">Utilizado comúnmente por automóviles, pero puede usarse para cualquier tipo de activo; estos dispositivos son los mejores para tener la información más completa, no solo de la posición en tiempo real de tu activo, también de la carga de batería, gasolina u otras características que pueden programarse en estos dispositivos.</p>
+                                <br>
+                 <!-- <a  href="images/AVL.pdf" class="fancybox" data-fancybox-group="gallery" data-fancybox-width="1000px" data-fancybox-height="900px"> <i class="fa-search"></i></a>-->
+ 						<a  href="simulador.html#tab1"  <i class="fa-search"></i></a>                               
+                               
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item -->
+                    
+                    <div class="portfolio-item col-md-4 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/3g3.jpg" alt="dispositivos 3g">
+                            <div class="portfolio-overlay">
+                                <h3>DISPOSITIVOS 3G</h3>
+                                <p>Nos referimos al 3G como la tercera generación de tecnología en la comunicación móvil, estos dispositivos son totalmente compatibles con esta red inalámbrica y aunque funcionan en cualquier parte del mundo, obtienen mayor precisión en ciertos lugares, pero siempre con la mayor rapidez para una fácil localización de tu equipo.</p>
+                                <br>
+                   <a  href="simulador.html#tab2"  <i class="fa-search"></i></a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item -->
+                    
+                    <div class="portfolio-item col-md-4 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/candados.jpg" alt="candados">
+                            <div class="portfolio-overlay">
+                                <h3>CANDADOS</h3>
+                                <p>Si deseas proveer protección extra a tus activos, contenedores o cajas, encontrarás las mejores opciones en nuestra sección de candados GPS. Asegúralos de robo o de quien los remueva sin autorización, así como también podrás configurar alarmas que tú recibirás cuando sucedan eventos específicos que programes.</p>
+                              <!--  <a href="images/gallery/p7.jpg" data-rel="lightbox">-->
+                                <br>
+                                  <a  href="simulador.html#tab3"  <i class="fa-search"></i></a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item -->
+                    
+                    <div class="portfolio-item col-md-4 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/personales.jpg" alt="Dispositivos personales">
+                            <div class="portfolio-overlay">
+                                <h3>Dispositivos personales</h3>
+                                 <p>Mantén seguro lo que más te importa. Con nuestros dispositivos compactos y discretos podrás buscar a cualquier miembro de tu familia o mascota en un amplio rango y te permite establecer diferentes alertas para cualquier emergencia.</p>
+                                <br>
+                                    <a  href="simulador.html#tab4"  <i class="fa-search"></i></a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item -->
+                    
+                    
+                    
+                    <div class="portfolio-item col-md-4 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/accesorios.jpg" alt="accesorios">
+                            <div class="portfolio-overlay">
+                                <h3>ACCESORIOS</h3>
+                                 <p>En esta sección podrás encontrar desde baterías extras hasta cables de programación para tus dispositivos GPS, permitiendo que funcionen de la forma más eficaz y sin ningún inconveniente; si no encuentras lo que estás buscando, ¡podemos ayudarte a encontrarlo!</p>
+                                <br>
+                                
+                                 <a  href="simulador.html#tab5"  <i class="fa-search"></i></a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item -->
+                    
+                    
+                     <div class="portfolio-item col-md-4 col-sm-6">
+                         <a href="simulador.html"> <div class="portfolio-thumb">
+                            <img src="images/gallery/cotizacion.jpg" alt="cotizacion">
+                            <div class="portfolio-overlay">
+                                <h3>Cotización: </h3>
+                                 <p>Haz clic aquí y obtén los mejores precios, solo tienes que seleccionar el servicio o producto requerido, la cantidad deseada y nosotros nos ponemos en contacto lo más pronto posible.</p>
+                               
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb --> </a>
+                    </div> <!-- /.portfolio-item -->
+                   
+                    
+                   
+                    
+                    
+                  
+                    
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+        </div> <!-- /#portfolio -->
+        
+ 					<style>
+                   .tt{
+					   color:#3498db;
+					   font-size:14px;
+					    font-weight: bold;
+					   }
+					.tt2{
+					   font-size:15px;
+					   }   
+					   
+                    </style>
+
+														    <!--SIM'S -->
+
+        <div class="content-section m2mf" id="sims">
+            <div class="container">
+            
+                <div class="row">
+                    <div class="heading-section col-md-12 text-center">
+                        <h2>Soluciones M2M</h2>
+                        
+                    </div> <!-- /.heading-section -->
+                </div> <!-- /.row -->
+                
+                
+                <div class="row">
+                
+                	<div class="col-md-12">
+                    <div class="simtext">
+                     <h2> ¿Qué es M2M? </h2>
+                     <p>Se refiere a la comunicación entre máquinas. Una máquina puede ser un dispositivo electrónico, un robot, un automóvil, un motor industrial, cualquier cosa que no sea una persona y esta máquina se comunica por Internet con un servidor. Algunos de los beneficios principales es la reducción de costos y automatización de procesos.</p>
+                     <h3 class="text-center"> Aplicaciones </h3>
+                    	</div> 
+                    </div> <!-- /.team-member -->
+                    
+                   
+                    
+                    <div class="col-md-4">
+                    <div class="fondo1 center-block img-responsive">
+                    <br>
+                    <img src="images/gallery/medicina.jpg" class="img-responsive img-thumbnail center-block" alt="medicina">
+                    <p class="tt text-center"> Medicina</p>
+                    </div> 
+                    </div> <!-- /.col-md-4 -->
+                    
+                     <div class="col-md-4">
+                    <div class="fondo1 center-block img-responsive">
+                    <br>
+                    <img src="images/gallery/rastreo.jpg" class="img-responsive img-thumbnail center-block" alt="Localización satelital">
+                    <p class="tt text-center"> Localización satelital</p>
+                    </div> 
+                    </div> <!-- /.col-md-4 -->
+                    
+                     <div class="col-md-4">
+                    <div class="fondo1 center-block img-responsive">
+                    <br>
+                    <img src="images/gallery/seguridad.jpg" class="img-responsive img-thumbnail center-block" alt="Seguridad">
+                    <p class="tt text-center">Seguridad</p>
+                    </div> 
+                    </div> <!-- /.col-md-4 -->
+                    
+                     <div class="col-md-4">
+                    <div class="fondo1 center-block img-responsive">
+                    <br>
+                    <img src="images/gallery/maquinas.jpg" class="img-responsive img-thumbnail center-block" alt="Maquinas expendedores">
+                    <p class="tt text-center"> Maquinas expendedores</p>
+                    </div> 
+                    </div> <!-- /.col-md-4 -->
+                    
+                     <div class="col-md-4">
+                    <div class="fondo1 center-block img-responsive">
+                    <br>
+                    <img src="images/gallery/telemetria.jpg" class="img-responsive img-thumbnail center-block" alt="telemetria vehicular">
+                    <p class="tt text-center">Telemetría Vehicular</p>
+                    </div> 
+                    </div> <!-- /.col-md-4 -->
+                    
+                    <div class="col-md-4">
+                    <div class="fondo1 center-block img-responsive">
+                    <br>
+                     <p class="tt2">La comunicación entre estas máquinas es posible por medio de SIMS DE DATOS M2M, con las cuales podrás conectar tus dispositivos de una manera Fácil y rápida. </p> <br>
+                     <p class="tt2">Nosotros te ofrecemos diferentes Planes de datos M2M para cualquier necesidad las cuales trabajan con las operadoras más importantes de cada país. </p>
+                    </div> 
+                    </div> <!-- /.col-md-4 -->
+                   
+                    <div class="col-md-12 center-block text-center">
+                    <br><br><a href="simulador.html#tab6" class="sim">Cotización de SIMs</a>
+                    </div>
+                    
+                    
+                    
+                </div> <!-- /.row -->
+                
+                <br> <br> <br>
+            </div> <!-- /.container -->
+        </div> <!-- /#sims -->
+    
+         
+         	                   
+
+                                      <!--CONTÁCTANOS-->
+
+        <div class="content-section" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="heading-section col-md-12 text-center">
+                        <h2>¡CONTÁCTANOS!</h2>
+                        <p>mandanos un mensaje</p>
+                    </div> <!-- /.heading-section -->
+                </div> <!-- /.row -->
+              
+                
+                
+               								
+                
+                <div class="row">
+                
+                 
+                 <div class="col-md-6 col-sm-6">
+                        <div class="contact-form">   
+                            <form method="post" name="contactform" id="contactform" action="form.php">
+                                <p>
+                                    <input name="name" type="text" id="name" placeholder="Nombre" required>
+                                </p>
+                                <p>
+                                    <input name="email" type="email" id="email" placeholder="Correo" required> 
+                                </p>
+                                <p>
+                                    <input name="subject" type="text" id="subject" placeholder="Asunto" required> 
+                                </p>
+                                <p>
+                                    <textarea name="message" id="comments" placeholder="Mensaje" required></textarea>    
+                                </p>
+                                <p>
+                                <br>
+                               <!-- <div class="g-recaptcha" data-sitekey="6LctMhEUAAAAAD_u0gKbkCN1EBXO3jhhkFDoUu8N"></div>-->
+                                 </p>
+                                <input type="submit" name="submit" class="mainBtn" id="submit" value="Mandar Mensaje">
+                            </form>
+                        </div> <!-- /.contact-form -->
+                    </div> <!-- /.col-md-5 -->
+                
+                    <div class="col-md-6 col-sm-6">
+                        <p class="duda">¿TIENES ALGUNA DUDA?</p>
+                        <p class="duda">¿SUGERENCIAS? ¡ENVÍANOS UN MENSAJE!</p>
+                        <ul class="contact-info">
+                            <li>SANDIEGO</li>
+                            <li>2498 Roll Drive Ste. 216 San Diego CA, 92154 </li>
+                            <li>USA | phone +1 (619) 730-6242</li>
+                            <br>
+                            <li>TIJUANA</li>
+                            <li>Blvd Aguacaliente 10440 Interior 1 Colonia Revolución </li>
+                            <li>MEX | phone +52 (664) 686-1830</li>
+                            <li>MEX | phone +52 (664) 623-8651</li>
+                            <br>
+                         
+                            <div class="col-sm-6">
+                            <li>SOPORTE</li>
+                            <li>Email: <a href="mailto:support@prossea.com">support@prossea.com</a></li>
+                            <li>phone: (664) 157-8879</li>
+                            <li>phone: (664) 252-5514</li>
+                            <li><script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
+<div id="SkypeButton_Call_support.prossea_1">
+ <script type="text/javascript">
+ Skype.ui({
+ "name": "dropdown",
+ "element": "SkypeButton_Call_support.prossea_1",
+ "participants": ["support.prossea"]
+ });
+ </script>
+</div></li>
+                        	</div>
+                            
+                            <div class="col-sm-6">
+                             <li>VENTAS</li>
+                            <li>Email: <a href="mailto:info@prossea.com">info@prossea.com</a></li>
+                            <li><script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
+<div id="SkypeButton_Call_developer.a.prossea_1">
+ <script type="text/javascript">
+ Skype.ui({
+ "name": "dropdown",
+ "element": "SkypeButton_Call_developer.a.prossea_1",
+ "participants": ["sales.s.prossea"]
+ });
+ </script>
+</div></li>
+                        	</div>
+                        
+                        </ul>
+                        <!-- spacing for mobile viewing --><br><br>
+                    </div> <!-- /.col-md-7 -->
+                    
+                </div> <!-- /.row -->
+                
+                
+               
+                
+                
+            </div> <!-- /.container -->
+        </div> <!-- /#contact -->
+        
+        
+            
+        <div id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-xs-12 text-left">
+                        <span>Copyright &copy; 2016 PROSSEA</span>
+                  </div> <!-- /.text-center -->
+                  
+                  
+                  
+                   <div class="col-md-4 col-xs-12 text-center">
+                        <span><a href="Terminos.html">Términos y Condiciones</a> | <a href="#"> Política de Privacidad</a></span>
+                  </div> <!-- /.text-center -->
+                  
+                  
+                  
+                  
+                    <div class="col-md-4 hidden-xs text-right">
+                        <a href="#top" id="go-top">Ir arriba</a>
+                    </div> <!-- /.text-center -->
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+        </div> <!-- /#footer -->
+        
+        
+        
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        
+     <script type="text/javascript">
+var $zoho= $zoho || {salesiq:{values:{},ready:function(){}}};var d=document;s=d.createElement("script");s.type="text/javascript";
+s.defer=true;s.src="https://salesiq.zoho.com/prosseacorp/float.ls?embedname=prosseacorp";
+t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);
+$zoho.salesiq.ready=function(embedinfo){$zoho.salesiq.floatbutton.visible("");}
+</script>
+
+
+
+        <!-- Google Map -->
+        <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+        <script src="js/vendor/jquery.gmap3.min.js"></script>
+        
+      
+
+<!--<script type="text/javascript">
+var $zoho= $zoho || {salesiq:{values:{},ready:function(){}}};var d=document;s=d.createElement("script");s.type="text/javascript";
+s.defer=true;s.src="https://salesiq.zoho.com/titanium/float.ls?embedname=titanium";
+t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);
+</script>-->
+   
+
+        <!-- Google Map Init-->
+        <script type="text/javascript">
+            jQuery(function($){
+                $('#map_canvas').gmap3({
+                    marker:{
+                        address: '32.517226, -117.013971' 
+                    },
+                        map:{
+                        options:{
+                        zoom: 15,
+                        scrollwheel: true,
+                        streetViewControl : true
+                        }
+                    }
+                });
+
+                /* Simulate hover on iPad
+                 * http://stackoverflow.com/questions/2851663/how-do-i-simulate-a-hover-with-a-touch-in-touch-enabled-browsers
+                 --------------------------------------------------------------------------------------------------------------*/ 
+                $('body').bind('touchstart', function() {});
+            });
+        </script>
+        <!-- templatemo 406 flex -->
+        
+        
+        <!-- Add fancyBox main JS and CSS files -->
+        <script type="text/javascript" src="source/jquery.fancybox.js"></script>
+       
+        <script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			 *  Simple image gallery. Uses default settings
+			 */
+
+			$('.fancybox').fancybox();
+
+			/*
+			 *  Different effects
+			 */
+			 
+			 
+			 
+
+			// Change title type, overlay closing speed
+			$(".fancybox-effects-a").fancybox({
+				helpers: {
+					title : {
+						type : 'outside'
+					},
+					overlay : {
+						speedOut : 0
+					}
+				}
+			});
+
+			// Disable opening and closing animations, change title type
+			$(".fancybox-effects-b").fancybox({
+				openEffect  : 'none',
+				closeEffect	: 'none',
+
+				helpers : {
+					title : {
+						type : 'over'
+					}
+				}
+			});
+
+			// Set custom style, close if clicked, change title type and overlay color
+			$(".fancybox-effects-c").fancybox({
+				wrapCSS    : 'fancybox-custom',
+				closeClick : true,
+
+				openEffect : 'none',
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					overlay : {
+						css : {
+							'background' : 'rgba(238,238,238,0.85)'
+						}
+					}
+				}
+			});
+
+			// Remove padding, set opening and closing animations, close if clicked and disable overlay
+			$(".fancybox-effects-d").fancybox({
+				padding: 0,
+
+				openEffect : 'elastic',
+				openSpeed  : 150,
+
+				closeEffect : 'elastic',
+				closeSpeed  : 150,
+
+				closeClick : true,
+
+				helpers : {
+					overlay : null
+				}
+			});
+
+			/*
+			 *  Button helper. Disable animations, hide close button, change title type and content
+			 */
+
+			$('.fancybox-buttons').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					buttons	: {}
+				},
+
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				}
+			});
+
+
+			/*
+			 *  Thumbnail helper. Disable animations, hide close button, arrows and slide to next gallery item if clicked
+			 */
+
+			$('.fancybox-thumbs').fancybox({
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+				arrows    : false,
+				nextClick : true,
+
+				helpers : {
+					thumbs : {
+						width  : 50,
+						height : 50
+					}
+				}
+			});
+			
+			/*
+			 *  QUITAR LO BLANCO DE CONTORNO
+			*/
+			
+			$(".fancybox")
+    .attr('rel', 'gallery')
+    .fancybox({
+         openEffect  : 'none',
+        closeEffect : 'none',
+        nextEffect  : 'none',
+        prevEffect  : 'none',
+        padding     : 0,
+        margin      : [20, 60, 20, 60], // Increase left/right margin
+		
+		
+		type: 'iframe',  // Quitar esta parte si ya no quiero poner las medidas del iframe
+        autoSize : false,
+        beforeLoad : function() {         
+            this.width  = parseInt(this.element.data('fancybox-width'));  
+            this.height = parseInt(this.element.data('fancybox-height'));}
+		
+    });
+	
+
+			/*
+			 *  Media helper. Group items, disable animations, hide arrows, enable media and button helpers.
+			*/
+			$('.fancybox-media')
+				.attr('rel', 'media-gallery')
+				.fancybox({
+					openEffect : 'none',
+					closeEffect : 'none',
+					prevEffect : 'none',
+					nextEffect : 'none',
+
+					arrows : false,
+					helpers : {
+						media : {},
+						buttons : {}
+					}
+				});
+
+			/*
+			 *  Open manually
+			 */
+
+			$("#fancybox-manual-a").click(function() {
+				$.fancybox.open('1_b.jpg');
+			});
+
+			$("#fancybox-manual-b").click(function() {
+				$.fancybox.open({
+					href : 'iframe.html',
+					type : 'iframe',
+					padding : 5
+				});
+			});
+
+			$("#fancybox-manual-c").click(function() {
+				$.fancybox.open([
+					{
+						href : '1_b.jpg',
+						title : 'My title'
+					}, {
+						href : '2_b.jpg',
+						title : '2nd title'
+					}, {
+						href : '3_b.jpg'
+					}
+				], {
+					helpers : {
+						thumbs : {
+							width: 75,
+							height: 50
+						}
+					}
+				});
+			});
+
+
+		});
+	</script>
+    
+        
+    </body>
+</html>
