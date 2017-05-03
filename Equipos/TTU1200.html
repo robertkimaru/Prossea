@@ -11,6 +11,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="css/shareicon.css">
 <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.png">
+ <!-- Add fancyBox main JS and CSS files -->
+		<link rel="stylesheet" type="text/css" href="../source/jquery.fancybox.css?v=2.1.5" media="screen" />
 
  <style>
           #afrodita{
@@ -79,6 +81,22 @@
 }	
 	
 
+p {
+	font-family: 'Roboto', sans-serif;
+	font-weight:400;
+	font-size:20px;
+	margin-top:5px;}
+
+.lin{
+    
+	
+	border-style: solid;
+	border-bottom-width:0px;
+}		
+
+.pro3 .form-control{
+				width:80px;
+				display:inline;}	
 	
           </style> 
 
@@ -90,8 +108,8 @@
 
 <!--header-->
 <a href="javascript:history.back()">
-<div class="header2 text-center">
-	 <div class="container"></div>
+<div class=" text-center">
+	<img src="images/banner33.jpg" class="img-responsive center-block " alt="accesorios imagen"> 
 </div></a>
 <!--header//-->
 
@@ -106,13 +124,13 @@
    
 		 <ol class="breadcrumb">
 		  <li><a href="../index.html">Inicio</a></li>
-		  <li><a href="../simulador.html#tab_tab1">Equipos</a></li>
+		  <li><a href="../Cotizador.html#prod_GPSAVL">Equipos</a></li>
           <li class="active" >TTU 1200</li>
 		  </ol>
      </div>
      <div class="col-sm-1">
 		 <ol class="list-inline text-center">
-		  <li><a href="../simulador.html#tab7" class="btn btn-success"> <span class="fa-youtube-square"></span> <span id="simpleCart_quantity" class="simpleCart_quantity">)</span></a></li>
+		  <li><a href="../Cotizador.html#prod_Cotizar" class="btn btn-success"> <span class="fa-youtube-square"></span> <span id="simpleCart_quantity" class="simpleCart_quantity">)</span></a></li>
 		 </ol>
      </div>
      </div>  
@@ -127,6 +145,12 @@ function goBack() {
        
        <div class="col-sm-12 col-md-5">
 		<div class="details-left-slider"> <img src="../images/equipos/grandes/KONTTI-TRACK.png" class="img-responsive center-block " alt="TTU 1200"> </div>
+        
+          <div class="simpleCart_shelfItem text-center">
+         <a class="fancybox-effects-b" href="#TTU1200" id="btn_TTU1200" data-fancybox-group="media-gallery" data-fancybox-width="500" data-fancybox-height="300" >
+                             <p class="pro">    <input type="button" class="item_add" value="ADD"></p></a>
+        	 </div> 
+             
          </div>  
          
          <div class="col-sm-12 col-md-7">    
@@ -139,14 +163,14 @@ function goBack() {
 							<h4>Descripción:</h4>
 							<p class="desc">El TTU 1200 con bateria recargable es un
 producto de rastreo diseñado para ser
-conable y soportar varios años de uso
+confiable y soportar varios años de uso
 siempre adaptable a diferentes plataformas.
 Es el producto ideal para activos que se
 mantienen inactivos durante largos
 periodos de tiempo.
 Especial para: cajas seca/refrigerada,
 camiones de volteo, contenedores, RV,
-Barcos, lanchas casas y ocinas móviles.</p>
+Barcos, lanchas casas y oficinas móviles.</p>
 									<h4>Protegido en todo momento</h4>
                          <p class="desc">Precio y tecnologías competitivas, siempre
 a la vanguardia el dispositivo TTU 1200 es
@@ -227,7 +251,7 @@ por varios años.</p>
       
         <tr>
         <td class="fa-stack-overflow">Acelerómetro de 3 ejes para sensor de movimiento con 3 entradas/3 salidas</td>
-        <td class="fa-stack-overflow">Monitoreo de Voltaje y Noticación de Batería Baja</td>
+        <td class="fa-stack-overflow">Monitoreo de Voltaje y Notificación de Batería Baja</td>
       </tr>
       
        <tr>
@@ -236,7 +260,7 @@ por varios años.</p>
       </tr>
       
         <tr>
-        <td class="fa-stack-overflow">Conguración por aire, descarga de Firmware por aire</td>
+        <td class="fa-stack-overflow">Configuración por aire, descarga de Firmware por aire</td>
         <td> </td>
       </tr>
      
@@ -302,7 +326,7 @@ por varios años.</p>
       
         <tr>
         <td class="info">I/O Comprensivo</td>
-        <td class="fa-stack-overflow">Inputs digitales: 3 jas</td>
+        <td class="fa-stack-overflow">Inputs digitales: 3 fijas</td>
         <td class="fa-stack-overflow">Salidas digitales: 3 colector abierto (150 mA)</td>
        <td class="fa-stack-overflow">LEDs de estado: GPS y Celular</td>
       </tr>
@@ -511,7 +535,30 @@ por varios años.</p>
 </div>  <!-- /INTERFAZ-->
 
 
-
+ <!-- TTU1200--> 
+             <div class="col-sm-4 text-center" style="display:none;"  id="show_TTU1200">
+            <a href="javascript:;" class="fa fa-trash-o" style="cursor:pointer" onclick="close_TTU1200()">Quitar</a>
+            <img src="images/equipos/TTU1200.png" style="width:164px; height:181px;" class="img-responsive" alt="TTU1200">
+           <p class="pro3">Cantidad: <input min="1" type="number" id="quantity" name="TTU1200" value="" class="form-control item_quantity input-small inpTTU1200"> </p>
+            </div>
+            
+             <!--TTU1200-->
+                   <div class="container" id="TTU1200" style="display: none; width:500px; height:300px;">
+                    <div class="row ">
+                        <div class="col-md-12 text-center">
+                    	<p>Has agregado al carrito:</p>
+                        <p class="lin"></p>
+       			 <img src="../images/equipos/TTU1200.png" style="width:164px; height:181px;" class="img-responsive center-block " alt="TTU700"> 				   							<br>
+                        </div>  <!--/.col-md-12 -->
+                    </div> <!-- /.row -->
+                      <div class="row">
+                        <div class="col-md-12 text-right">
+                        <a href="../Cotizador.html#prod_Cotizar"  onClick="document.location.reload();">
+						<button style="width:22%;" type="button" class="btn btn-primary">Ir al carrito</button></a>
+                           </div>  <!--/.col-md-12 -->
+                    </div> <!-- /.row -->
+                </div> 
+                <!-- /.TTU1200-->
        
 
  </div>
@@ -522,13 +569,203 @@ por varios años.</p>
  <script src="../js/simpleCart.min.js"> </script>
  <script src="../js/simulador.js"></script>
  
+   <script type="text/javascript" src="../source/jquery.fancybox.pack.js?v=2.1.5"></script>
+         <!-- Fancybox -->       
+    	<script type="text/javascript">
+			$(document).ready(function() {
+			/*
+			 *  Simple image gallery. Uses default settings
+			 */
+
+			$('.fancybox').fancybox();
+
+			/*
+			 *  Different effects
+			 */
+
+			// Change title type, overlay closing speed
+			$(".fancybox-effects-a").fancybox({
+				helpers: {
+					title : {
+						type : 'outside'},
+					overlay : {
+						speedOut : 0
+					}
+				}
+			});
+/*
+		$(".fancybox")
+    .attr('rel', 'gallery')
+    .fancybox({
+        type: 'iframe',
+        autoSize : false,
+        beforeLoad : function() {         
+            this.width  = parseInt(this.element.data('fancybox-width'));  
+            this.height = parseInt(this.element.data('fancybox-height'));
+        }
+    });*/
+			// Disable opening and closing animations, change title type
+			$(".fancybox-effects-b").fancybox({
+				openEffect  : 'none',
+				closeEffect	: 'none',
+				arrows    : false,
+				helpers : {
+					title : {
+						type : 'over'
+					}
+				}
+			});
+
+			// Set custom style, close if clicked, change title type and overlay color
+			$(".fancybox-effects-c").fancybox({
+				wrapCSS    : 'fancybox-custom',
+				closeClick : true,
+
+				openEffect : 'none',
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					overlay : {
+						css : {
+							'background' : 'rgba(238,238,238,0.85)'
+						}
+					}
+				}
+			});
+
+			// Remove padding, set opening and closing animations, close if clicked and disable overlay
+			$(".fancybox-effects-d").fancybox({
+				padding: 0,
+
+				openEffect : 'elastic',
+				openSpeed  : 150,
+
+				closeEffect : 'elastic',
+				closeSpeed  : 150,
+
+				closeClick : true,
+
+				helpers : {
+					overlay : null
+				}
+			});
+
+			/*
+			 *  Button helper. Disable animations, hide close button, change title type and content
+			 */
+
+			$('.fancybox-buttons').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					buttons	: {}
+				},
+
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				}
+			});
+
+
+			/*
+			 *  Thumbnail helper. Disable animations, hide close button, arrows and slide to next gallery item if clicked
+			 */
+
+			$('.fancybox-thumbs').fancybox({
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+				arrows    : false,
+				nextClick : true,
+
+				helpers : {
+					thumbs : {
+						width  : 50,
+						height : 50
+					}
+				}
+			});
+
+			/*
+			 *  Media helper. Group items, disable animations, hide arrows, enable media and button helpers.
+			*/
+			$('.fancybox-media')
+				.attr('rel', 'media-gallery')
+				.fancybox({
+					openEffect : 'none',
+					closeEffect : 'none',
+					prevEffect : 'none',
+					nextEffect : 'none',
+
+					arrows : false,
+					helpers : {
+						media : {},
+						buttons : {}
+					}
+				});
+
+			/*
+			 *  Open manually
+			 */
+
+			$("#fancybox-manual-a").click(function() {
+				$.fancybox.open('1_b.jpg');
+			});
+
+			$("#fancybox-manual-b").click(function() {
+				$.fancybox.open({
+					href : 'iframe.html',
+					type : 'iframe',
+					padding : 5
+				});
+			});
+
+			$("#fancybox-manual-c").click(function() {
+				$.fancybox.open([
+					{
+						href : '1_b.jpg',
+						title : 'My title'
+					}, {
+						href : '2_b.jpg',
+						title : '2nd title'
+					}, {
+						href : '3_b.jpg'
+					}
+				], {
+					helpers : {
+						thumbs : {
+							width: 75,
+							height: 50
+						}
+					}
+				});
+			});
+
+
+		});
+		</script>
+ 		<!-- /Fancybox -->
+ 
+ 
 
 <!--fotter-->
 <div class="fotter-logo">
 	 <div class="container">
 	 <div class="ftr-logo"> <img src="../images/logos/prossea blanco.png" alt="logo prossea blanco">  </div>
 	 <div class="ftr-info">
-	 <p>&copy; 2016 Todos los derechos reservados <a href="http://w3layouts.com/">PROSSEA</a> </p>
+	 <p>&copy; 2016 Todos los derechos reservados <a href="../Terminos.html">PROSSEA</a> </p>
 	</div>
 	 <div class="clearfix"></div>
 	 </div>

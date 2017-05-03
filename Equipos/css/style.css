@@ -673,7 +673,20 @@ padding-top:1em;
 	min-height:250px;
 }
 
+.header7{
+   background:url(../images/mascotas.jpg) no-repeat 0px 0px;
+	background-size:cover;
+	-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+	min-height:250px;
+}
 
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  .header7 {
+	  background-size:auto;
+  }
+}
 
 
 .about {

@@ -1,6 +1,6 @@
 <?php
     $from = 'From: PAGINA WEB PROSSEA';
-	$to = 'PROSSEA <design@prossea.com> , sales@prossea.com';
+	$to = 'PROSSEA<rob_cal_sam@outlook.es>,sales@titaniumerp.net,titaniumerp.net@gmail.com';
 	//$to = 'design@prossea.com';
 	
 	
@@ -30,13 +30,14 @@
 	$eq13 = $_POST['FM1000ST']; //FM1000ST
 	$eq14 = $_POST['ALLCAN300']; //ALLCAN300
 	$eq15 = $_POST['AT2000']; //AT2000
-	$eq44 = $_POST['LX3504']; //LX3504
-	$eq45 = $_POST['GV300']; //GV300
+	$eq44 = $_POST['LX3504']; //L3504
+	$eq45 = $_POST['GV300']; //GV300 FMA120
+	$eq56 = $_POST['FMA120']; //FMA120
 	
 	//3G
     $eq16 = $_POST['LMU820']; //LMU820
 	$eq17 = $_POST['GT06E']; //GT06E
-	$eq18 = $_POST['FM3620']; //FM3620
+	$eq18 = $_POST['FM3622']; //FM3622
 	$eq46 = $_POST['FM6320']; //FM6320
 	$eq47 = $_POST['GV300W']; //GV300W
 	$eq48 = $_POST['MT200X']; //MT200X
@@ -45,6 +46,7 @@
     $eq19 = $_POST['TTU700']; //TTU700
 	$eq20 = $_POST['Container']; //Container Lock
 	$eq21 = $_POST['WatchLock']; //WatchLock
+	$eq54 = $_POST['GL']; //GL-2 SmartLock
 	
 	//PERSONALES															
     $eq22 = $_POST['GT300']; //GT300
@@ -56,13 +58,18 @@
 	$eq43 = $_POST['GH4000']; //GH4000
 	$eq49 = $_POST['TL201']; //TL201
 	$eq50 = $_POST['TL202']; //TL202
-	$eq51 = $_POST['TL007']; //TL007
+	$eq57 = $_POST['G36']; //G36
+	
+	//MASCOTAS															
+    $eq51 = $_POST['TL007']; //TL007
 	$eq52 = $_POST['TL601']; //TL601
+	$eq53 = $_POST['T500']; //T500
 	
 	//ACCESORIOS																
 	$eq25 = $_POST['sensorcomb']; //Sensor Combustible
 	$eq26 = $_POST['camara2']; //CAMARA DOMO
 	$eq27 = $_POST['camara3']; //CAMARA INFRARROJA
+	$eq28 = $_POST['relay']; //RELEVADOR RELAY
 	$eq29 = $_POST['GPSreceptor']; //GPS RECEPTOR
 	$eq30 = $_POST['fuente']; //FUENTE RESPALDO ALIMENTACION
 	$eq31 = $_POST['ultrasonic']; //ULTRASONIC FUEL SENSOR
@@ -73,13 +80,13 @@
 	$eq36 = $_POST['cablePro']; //CABLE PROGRAMADOR GL POCKET
 	$eq37 = $_POST['panico']; //BOTON PANICO
 	$eq38 = $_POST['pro7y8']; //CABLE PROGRAMADOR 700 y 800
-	$eq28 = $_POST['relay']; //RELEVADOR RELAY
+	$eq55 = $_POST['LectorRFID']; //Lector RFID
 	
     
 	
 	
 	
-$t1="";	$t2="";	$t3="";	$t4="";$t5="";$t6="";$t7="";$t8="";$t9="";$t10="";$t11="";$t12="";$t13="";$t14="";$t15="";$t16="";$t17="";$t18="";$t19="";$t20="";$t21="";$t22="";$t23="";$t24="";$t25="";$t26="";$t27="";$t28="";$t29="";$t30="";$t31="";$t32="";$t33="";$t34="";$t35="";$t36="";$t37="";$t38="";$t39="";$t40="";$t41="";$t42="";$t43="";$t44="";$t45="";$t46="";$t47="";$t48="";$t49="";$t50="";$t51="";$t52="";											
+$t1="";	$t2="";	$t3="";	$t4="";$t5="";$t6="";$t7="";$t8="";$t9="";$t10="";$t11="";$t12="";$t13="";$t14="";$t15="";$t16="";$t17="";$t18="";$t19="";$t20="";$t21="";$t22="";$t23="";$t24="";$t25="";$t26="";$t27="";$t28="";$t29="";$t30="";$t31="";$t32="";$t33="";$t34="";$t35="";$t36="";$t37="";$t38="";$t40="";$t41="";$t42="";$t43="";$t44="";$t45="";$t46="";$t47="";$t48="";$t49="";$t50="";$t51="";$t52="";$t53="";$t54="";$t55="";$t56="";$t57="";											
 
 
 //AVL
@@ -115,9 +122,11 @@ if ($eq1 > 0) {
 }if ($eq15 > 0) {
     $t15 = 'AT2000: '.$eq15." /";
 }if ($eq44 > 0) {
-    $t44 = 'LX3504: '.$eq44." /";
+    $t44 = 'L3504 DVR: '.$eq44." /";
 }if ($eq45 > 0) {
     $t45 = 'GV300: '.$eq45." /";
+}if ($eq56 > 0) {
+    $t56 = 'FMA120: '.$eq56." /";
 }
 
 
@@ -127,7 +136,7 @@ if ($eq16 > 0) {
 }if ($eq17 > 0) {
     $t17 = 'GT06E: '.$eq17." /";
 }if ($eq18 > 0) {
-    $t18 = 'FM3620: '.$eq18." /";
+    $t18 = 'FM3622: '.$eq18." /";
 }if ($eq46 > 0) {
     $t46 = 'FM6320: '.$eq46." /";
 }if ($eq47 > 0) {
@@ -145,6 +154,8 @@ if ($eq19 > 0) {
     $t20 = 'Container Lock: '.$eq20." /";
 }if ($eq21 > 0) {
     $t21 = 'WatchLock: '.$eq21." /";
+}if ($eq54 > 0) {
+    $t54 = 'GL-2 SmartLock: '.$eq54." /";
 }
 
 
@@ -167,11 +178,19 @@ if ($eq22 > 0) {
     $t49 = 'TL201: '.$eq49." /";
 }if ($eq50 > 0) {
     $t50 = 'TL202: '.$eq50." /";
-}if ($eq51 > 0) {
+}if ($eq57 > 0) {
+    $t57 = 'G36: '.$eq57." /";
+}
+
+//MASCOTAS
+if ($eq51 > 0) {
     $t51 = 'TL007: '.$eq51." /";
 }if ($eq52 > 0) {
     $t52 = 'TL601: '.$eq52." /";
+}if ($eq53 > 0) {
+    $t53 = 'T500: '.$eq53." /";
 }
+
 
 	
 //ACCESORIOS
@@ -203,8 +222,8 @@ if ($eq25 > 0) {
     $t37 = 'BOTON PANICO : '.$eq37." /";
 }if ($eq38 > 0) {
     $t38 = 'CABLE PROGRAMADOR PARA LMU-800 Cal Amp : '.$eq38." /";
-}if ($eq39 > 0) {
-    $t39 = 'RELEVADOR RELAY : '.$eq39." /";
+}if ($eq55 > 0) {
+    $t55 = 'LectorRFID : '.$eq55." /";
 }	
 
 
@@ -231,7 +250,7 @@ if ($eq25 > 0) {
 
 		
 $subject = "Cotizacion Equipos";
-$body = "Nombre: $name\n Apellido: $apellido\n Telefono: $tel\n Correo de la persona: $email\n Pais: $pais\n Ciudad y Estado: $ciudad\n\n EQUIPOS AVL:\n  $t1  $t2  $t3  $t4  $t5  $t6  $t7  $t8  $t9  $t10  $t11  $t12  $t13  $t14  $t15 $t44 $t45\n\n EQUIPOS 3GS:\n $t16 $t17 $t18 $t46 $t47 $t48\n\n CANDADOS:\n$t19  $t20  $t21\n\n DISP. PERSONALES:\n$t22  $t23  $t24  $t40  $t41  $t42  $t43 $t49 $t50 $t51 $t52\n\n ACCESORIOS:\n$t25  $t26  $t27  $t28  $t29  $t30  $t31  $t32  $t33  $t34  $t35  $t36  $t37  $t38  $t39\n\nPLANES SIM's:\n\n-Pool bytes:\n $cant1 sims / $plann1 \n\n -NOn-Net Bundle:\n $cant2 sims / $plann2 \n\n -NOn-Net Extendida:\n $cant6 sims / $plann6\n\n -Plan libre:\n $cant3 sims  / $plann3\n\n-Plan basico:\n $cant4 sims / $plann4\n\n -Plan Extendido:\n $cant5 sims / $plann5 \n\nSe entero por: $ent\nComentario Extra:\n$message";
+$body = "Nombre: $name\n Apellido: $apellido\n Telefono: $tel\n Correo de la persona: $email\n Pais: $pais\n Ciudad y Estado: $ciudad\n\n EQUIPOS AVL:\n  $t1  $t2  $t3  $t4  $t5  $t6  $t7  $t8  $t9  $t10  $t11  $t12  $t13  $t14  $t15 $t44 $t45 $t56\n\n EQUIPOS 3G:\n $t16 $t17 $t18 $t46 $t47 $t48\n\n CANDADOS:\n$t19  $t20  $t21 $t54\n\n DISP. PERSONALES:\n$t22  $t23  $t24  $t40  $t41  $t42  $t43 $t49 $t50 $t57 \n\n MASCOTAS:\n $t51 $t52 $t53 \n\n ACCESORIOS:\n$t25  $t26  $t27  $t28  $t29  $t30  $t31  $t32  $t33  $t34  $t35  $t36  $t37  $t38  $t55\n\nPLANES SIM's:\n\n-Pool bytes:\n $cant1 sims / $plann1 \n\n -NOn-Net Bundle:\n $cant2 sims / $plann2 \n\n -NOn-Net Extendida:\n $cant6 sims / $plann6\n\n -Plan libre:\n $cant3 sims  / $plann3\n\n-Plan basico:\n $cant4 sims / $plann4\n\n -Plan Extendido:\n $cant5 sims / $plann5 \n\nSe entero por: $ent\nComentario Extra:\n$message";
 
 
 
@@ -241,7 +260,6 @@ if ($_POST['submit']) {
     if (mail ($to, $subject, $body, $from)) {  
 	
        header("Location:EnviadoCotizacion.html");
-	   $men = 'Tu correo se ha enviado correctamente pirrin';
     } else { 
         echo '<p>Oops! An error occurred. Try sending your message again.</p>'; 
     }

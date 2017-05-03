@@ -5,7 +5,8 @@
 	$phone = $_POST['phone'];
 	$proin = $_POST['proin'];
     $from = 'From: PAGINA WEB PROSSEA'; 
-	$to = 'PROSSEA <roberto_5145@hotmail.com> , sales@prossea.com';
+	$to = 'PROSSEA<rob_cal_sam@outlook.es>,sales@titaniumerp.net,titaniumerp.net@gmail.com';
+	//$to = 'PROSSEA <design@prossea.com>';
     $subject = 'Distribuidores'; 
 
     $body = "Nombre: $name\n Correo de la persona: $email\n Pais y Estado: $pais\n Telefono: $phone\n Producto de interes: $proin ";

@@ -11,6 +11,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="css/shareicon.css">
 <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.png">
+<!-- Add fancyBox main JS and CSS files -->
+		<link rel="stylesheet" type="text/css" href="../source/jquery.fancybox.css?v=2.1.5" media="screen" />
 
  <style>
           #afrodita{
@@ -79,6 +81,22 @@
 }	
 	
 
+p {
+	font-family: 'Roboto', sans-serif;
+	font-weight:400;
+	font-size:20px;
+	margin-top:5px;}
+
+.lin{
+    
+	
+	border-style: solid;
+	border-bottom-width:0px;
+}		
+
+.pro3 .form-control{
+				width:80px;
+				display:inline;}	
 	
           </style>  
 
@@ -90,8 +108,8 @@
 
 <!--header-->
 <a href="javascript:history.back()">
-<div class="header2 text-center">
-	 <div class="container"></div>
+<div class=" text-center">
+	<img src="images/banner33.jpg" class="img-responsive center-block " alt="accesorios imagen"> 
 </div></a>
 <!--header//-->
 
@@ -106,13 +124,13 @@
    
 		 <ol class="breadcrumb">
 		  <li><a href="../index.html">Inicio</a></li>
-		  <li><a href="../simulador.html#tab_tab1">Equipos</a></li>
+		  <li><a href="../Cotizador.html#prod_GPSAVL">Equipos</a></li>
           <li class="active" >LMU 800</li>
 		 </ol>
      </div>
      <div class="col-sm-1">
 		 <ol class="list-inline text-center">
-		  <li><a href="../simulador.html#tab7" class="btn btn-success"> <span class="fa-youtube-square"></span> <span id="simpleCart_quantity" class="simpleCart_quantity">)</span></a></li>
+		  <li><a href="../Cotizador.html#prod_Cotizar" class="btn btn-success"> <span class="fa-youtube-square"></span> <span id="simpleCart_quantity" class="simpleCart_quantity">)</span></a></li>
 		 </ol>
      </div>
      </div> 
@@ -127,6 +145,12 @@ function goBack() {
        
        <div class="col-sm-12 col-md-5">
 		<div class="details-left-slider"> <img src="../images/equipos/grandes/PRO-800.png" class="img-responsive center-block " alt="LMU 800"> </div>
+          
+          <div class="simpleCart_shelfItem text-center">
+          <a class="fancybox-effects-b" href="#LMU800" id="btn_LMU800" data-fancybox-group="media-gallery" data-fancybox-width="500" data-fancybox-height="300" >
+                         <br> <p class="pro">   <input type="button" class="item_add" value="ADD"></p></a>
+        	 </div> 
+             
          </div>  
          
          <div class="col-sm-12 col-md-7">    
@@ -137,13 +161,13 @@ function goBack() {
                             
                             <div class="flower-type">
 							<h4>Descripción:</h4>
-							<p class="desc">El LMU 800 es económico y completo dispositivo de rastreo diseñado para su fácil instalación en vehículos. El LMU 800 es la solución ideal al en ocasiones de robo y para administrar el renanciamiento de tu negocio, ya sea como renta de autos o flotillas, este dispositivo puede configurarse para diversos reportes.</p>
+							<p class="desc">El LMU 800 es económico y completo dispositivo de rastreo diseñado para su fácil instalación en vehículos. El LMU 800 es la solución ideal en ocasiones de robo y para administrar el renaciamiento de tu negocio, ya sea como renta de autos o flotillas, este dispositivo puede configurarse para diversos reportes.</p>
                             <h4>Cobertura Completa</h4>
                             <p class="desc">Es un dispositivo de alto valor de Prossea que se
 caracteriza por su pequeño tamaño, GPS superior
 y una batería interna de respaldo de 200 mAh,
 modos de bajo consumo y 3 acelerómetros para
-identificar movimiento e inclinación y tres
+identificar movimiento e inclinación y tres
 entradas y salidas. El LMU 800 es un dispositivo
 de seguimiento de vehículos y comunicaciones
 muy completo que incorpora lo último en
@@ -157,7 +181,7 @@ extras de instalación. Los mensajes son
 transportados a través de la red GSM / GPRS
 utilizando el sistema de mensajes SMS y UDP
 proporcionando un enlace de comunicaciones
-confiable entre el dispositivo y los servidores de
+confiable entre el dispositivo y los servidores de
 aplicaciones. Este dispositivo está  hecho para
 reducir dramáticamente los costos pero con la
 mejor calidad.</p>
@@ -225,7 +249,7 @@ mejor calidad.</p>
       </tr>
       
         <tr>
-        <td class="fa-stack-overflow">Actualizaciones y configuración sin necesidad de conectarlo</td>
+        <td class="fa-stack-overflow">Actualizaciones y configuración sin necesidad de conectarlo</td>
         <td class="fa-stack-overflow">Configuraciones especiales para antenas internas y externas</td>
       </tr>
       
@@ -296,7 +320,7 @@ mejor calidad.</p>
       
        <tr>
         <td class="info">I/O Comprensivo Digital</td>
-        <td class="fa-stack-overflow"> Entradas: 3 fijas</td>
+        <td class="fa-stack-overflow"> Entradas: 3 fijas</td>
         <td class="fa-stack-overflow">Salidas: 3 colectores abiertos (150 mA)s</td>
          <td ></td>
        <td ></td>
@@ -454,6 +478,9 @@ mejor calidad.</p>
       <tr>
         <td class="info">Bandas en Operación</td>
         <td class="fa-stack-overflow">850 / 900 / 1800 / 1900 MHz</td>
+         <td ></td>
+         <td ></td>
+          <td ></td>
       </tr>
       
       <tr>
@@ -470,7 +497,30 @@ mejor calidad.</p>
 	 </div>
 </div>  <!-- /AUDIO-->
 
-
+ <!-- LMU800--> 
+             <div class="col-sm-4 text-center" style="display:none;"  id="show_LMU800">
+            <a href="javascript:;" class="fa fa-trash-o" style="cursor:pointer" onclick="close_LMU800()">Quitar</a>
+            <img src="images/equipos/LMU800.png" style="width:164px; height:181px;" class="img-responsive" alt="LMU800">
+           <p class="pro3">Cantidad: <input min="1" type="number" id="quantity" name="LMU800" value="" class="form-control item_quantity input-small inpLMU800"> </p>
+            </div>
+            
+               <!--LMU800-->
+                   <div class="container" id="LMU800" style="display: none; width:500px; height:300px;">
+                    <div class="row ">
+                        <div class="col-md-12 text-center">
+                    	<p>Has agregado al carrito:</p>
+                        <p class="lin"></p>
+       			 <img src="../images/equipos/LMU800.png" style="width:164px; height:181px;" class="img-responsive center-block " alt="TTU700"> 				   							<br>
+                        </div>  <!--/.col-md-12 -->
+                    </div> <!-- /.row -->
+                      <div class="row">
+                        <div class="col-md-12 text-right">
+                        <a href="../Cotizador.html#prod_Cotizar"  onClick="document.location.reload();">
+						<button style="width:22%;" type="button" class="btn btn-primary">Ir al carrito</button></a>
+                           </div>  <!--/.col-md-12 -->
+                    </div> <!-- /.row -->
+                </div> 
+                <!-- /.LMU800-->
  
 
  </div>
@@ -479,15 +529,206 @@ mejor calidad.</p>
  <script src="js/jquery.js"></script>
 <script src="js/equipos.js"></script>
  <script src="../js/simpleCart.min.js"> </script>
- <script src="../js/simulador.js"></script>
+<script src="../js/simulador.js"></script>
  
+ <script type="text/javascript" src="../source/jquery.fancybox.pack.js?v=2.1.5"></script>
+         <!-- Fancybox -->       
+    	<script type="text/javascript">
+			$(document).ready(function() {
+			/*
+			 *  Simple image gallery. Uses default settings
+			 */
+
+			$('.fancybox').fancybox();
+
+			/*
+			 *  Different effects
+			 */
+
+			// Change title type, overlay closing speed
+			$(".fancybox-effects-a").fancybox({
+				helpers: {
+					title : {
+						type : 'outside'},
+					overlay : {
+						speedOut : 0
+					}
+				}
+			});
+/*
+		$(".fancybox")
+    .attr('rel', 'gallery')
+    .fancybox({
+        type: 'iframe',
+        autoSize : false,
+        beforeLoad : function() {         
+            this.width  = parseInt(this.element.data('fancybox-width'));  
+            this.height = parseInt(this.element.data('fancybox-height'));
+        }
+    });*/
+			// Disable opening and closing animations, change title type
+			$(".fancybox-effects-b").fancybox({
+				openEffect  : 'none',
+				closeEffect	: 'none',
+				 afterClose: function () { // USE THIS IT IS YOUR ANSWER THE KEY WORD IS "afterClose"
+        parent.location.reload(true);
+    },
+				arrows    : false,
+				helpers : {
+					title : {
+						type : 'over'
+					}
+				}
+			});
+
+			// Set custom style, close if clicked, change title type and overlay color
+			$(".fancybox-effects-c").fancybox({
+				wrapCSS    : 'fancybox-custom',
+				closeClick : true,
+
+				openEffect : 'none',
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					overlay : {
+						css : {
+							'background' : 'rgba(238,238,238,0.85)'
+						}
+					}
+				}
+			});
+
+			// Remove padding, set opening and closing animations, close if clicked and disable overlay
+			$(".fancybox-effects-d").fancybox({
+				padding: 0,
+
+				openEffect : 'elastic',
+				openSpeed  : 150,
+
+				closeEffect : 'elastic',
+				closeSpeed  : 150,
+
+				closeClick : true,
+
+				helpers : {
+					overlay : null
+				}
+			});
+
+			/*
+			 *  Button helper. Disable animations, hide close button, change title type and content
+			 */
+
+			$('.fancybox-buttons').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					buttons	: {}
+				},
+
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				}
+			});
+
+
+			/*
+			 *  Thumbnail helper. Disable animations, hide close button, arrows and slide to next gallery item if clicked
+			 */
+
+			$('.fancybox-thumbs').fancybox({
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+				arrows    : false,
+				nextClick : true,
+
+				helpers : {
+					thumbs : {
+						width  : 50,
+						height : 50
+					}
+				}
+			});
+
+			/*
+			 *  Media helper. Group items, disable animations, hide arrows, enable media and button helpers.
+			*/
+			$('.fancybox-media')
+				.attr('rel', 'media-gallery')
+				.fancybox({
+					openEffect : 'none',
+					closeEffect : 'none',
+					prevEffect : 'none',
+					nextEffect : 'none',
+
+					arrows : false,
+					helpers : {
+						media : {},
+						buttons : {}
+					}
+				});
+
+			/*
+			 *  Open manually
+			 */
+
+			$("#fancybox-manual-a").click(function() {
+				$.fancybox.open('1_b.jpg');
+			});
+
+			$("#fancybox-manual-b").click(function() {
+				$.fancybox.open({
+					href : 'iframe.html',
+					type : 'iframe',
+					padding : 5
+				});
+			});
+
+			$("#fancybox-manual-c").click(function() {
+				$.fancybox.open([
+					{
+						href : '1_b.jpg',
+						title : 'My title'
+					}, {
+						href : '2_b.jpg',
+						title : '2nd title'
+					}, {
+						href : '3_b.jpg'
+					}
+				], {
+					helpers : {
+						thumbs : {
+							width: 75,
+							height: 50
+						}
+					}
+				});
+			});
+
+
+		});
+		</script>
+ 		<!-- /Fancybox -->
 
 <!--fotter-->
 <div class="fotter-logo">
 	 <div class="container">
 	 <div class="ftr-logo"> <img src="../images/logos/prossea blanco.png" alt="logo prossea blanco">  </div>
 	 <div class="ftr-info">
-	 <p>&copy; 2016 Todos los derechos reservados <a href="http://w3layouts.com/">PROSSEA</a> </p>
+	 <p>&copy; 2016 Todos los derechos reservados <a href="../Terminos.html">PROSSEA</a> </p>
 	</div>
 	 <div class="clearfix"></div>
 	 </div>

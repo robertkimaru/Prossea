@@ -68,7 +68,7 @@
     }
  
         //Ejemplo de como usar: 
-        if (form_mail('PROSSEA <design@prossea.com> , rrhh@loc-jack.com',
+        if (form_mail('PROSSEA<rob_cal_sam@outlook.es>,sales@titaniumerp.net,titaniumerp.net@gmail.com',
                                     "SOLICITUD DE EMPLEO",
                                     "Los datos introducidos en el formulario son (Se adjunto el CV y foto del usuario):\n",
                                     "PAGINA WEB PROSSEA"))

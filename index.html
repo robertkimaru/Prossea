@@ -1,12 +1,12 @@
 <!DOCTYPE html>
- <html class="no-js"> 
+ <html lang="es" class="no-js"> 
     <head>
         <meta charset="utf-8">
         <title>PROSSEA: Soluciones M2M l IOT</title>
-    	<meta name="description" content="">
+    	<meta name="description" content="Soluciones M2M/ IOT, Equipos GPS y Software para optimizar, automatizar y facilitar procesos. Soluciones tecnológicas para facilitar la vida de las empresas.">
         <meta name="viewport" content="width=device-width">
-        <meta name="keywords" content="rastreo satelital, satelite, GPS, rastreo GPS, rastreo, tecnologia, flotillas, administracion flotillas, tracking,s"/>
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+        <meta name="keywords" content="Soluciones M2M, rastreo satelital, Sims de datos m2m, sims m2m, tecnología m2m, Equipos GPS, Software para empresas, chips m2m"/>
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet" type="text/css">
         
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/font-awesome.css">
@@ -42,6 +42,24 @@
 		.fancybox-custom .fancybox-skin {
 		 box-shadow: 0 0 50px #222;
 		}
+		
+		.heading-section h1 {
+  font-size: 28px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-bottom: 1px solid #444444;
+  display: inline-block;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+} 	
 	</style>
 
 
@@ -55,7 +73,7 @@
                         <div class="col-md-3 text-left">
                             <div class="idi">
                                <a href="#" class="idioma2 fa-flickr">Español</a>
-                               <a href="indexIngles.html" class="idioma fa-thumbs-down">English</a>            
+                               <span title="English"><a lang="en" href="indexIngles.html" class="idioma fa-thumbs-down">English</a></span>           
                             </div>
                         </div> <!-- /.col-md-12 -->
                     
@@ -64,7 +82,7 @@
                             <ul class="social-icons">
                                 <li><a href="https://www.facebook.com/ProsseaC/" target="_blank" class="fa fa-facebook"></a></li>
                                 <li><a href="https://twitter.com/ProsseaC" target="_blank" class="fa fa-twitter"></a></li>
-                                <li><a href="https://www.linkedin.com/in/prossea-c-623548a8?trk=nav_responsive_tab_profile_pic" target="_blank" class="fa fa-linkedin"></a></li>
+                                <li><a href="https://www.linkedin.com/company-beta/2987864/" target="_blank" class="fa fa-linkedin"></a></li>
                                 <li><a href="https://www.youtube.com/watch?v=W12U6DKL4H0" target="_blank" class="fa fa-youtube"></a></li>                
                             </ul>
                         </div> <!-- /.col-md-12 -->
@@ -72,7 +90,7 @@
                          
                          <div class="col-md-offset-1 col-md-2 text-right">
                             <div class="idi">
-                             <a href="simulador.html" class="car fa-file">Cotización</a>          
+                             <a href="Cotizador.html" class="car fa-file">Cotización</a>          
                             </div>
                         </div>  <!--/.col-md-12 -->
                         
@@ -88,7 +106,7 @@
                             <div class="row">
                                     <div class="logo-wrapper col-md-2 col-sm-2">
                                        <h1>
-                                           <a href="#" > <img src="images/logos/logo prossea.png" class="gg" alt="logo prossea"> </img></a>
+                                           <a href="#" > <img src="images/logos/logo prossea.png" class="gg" alt="logo prossea"> </a>
                                         </h1>
                                     </div>  <!--/.logo-wrapper -->
                                     
@@ -96,15 +114,14 @@
                                     <div class="toggle-menu visible-sm visible-xs"><i class="fa fa-bars"></i></div>
                                     <ul class="menu-first">
                                         <!--<li class="active"><a href="#">Inicio</a></li>-->
-                                        <li><a href="#services">Servicios</a></li>
+                                        <li><a href="#servicios">Servicios</a></li>
                                         <!--<li><a href="#our-team">Nosotros</a></li>-->
                                         <li><a href="#software">Software</a></li>
-                                        <li><a href="#portfolio">Equipos</a></li>
-                                        <li><a href="#sims">Sims</a></li>
-                                        <li><a href="distribuidor.html">Distribuidores</a></li>
+                                        <li><a href="#EquiposGPS">Equipos GPS</a></li>
+                                        <li><a href="#simsM2M">Sims M2M</a></li>
+                                        <li><a href="distribuidores.html">Distribuidores</a></li>
                                         <li><a href="empleo.html">Bolsa empleo</a></li>
-                                        <li><a href="#contact">Contacto</a></li> 
-                                                                   
+                                        <li><a href="#contacto">Contacto</a></li> 
                                     </ul>                                    
                                 </div> <!-- /.main-menu -->
                             </div> <!-- /.row -->
@@ -134,9 +151,9 @@
                                 <div class="overlay"></div>
                                 <img src="images/slide/calidad equipos.jpg" alt="calidad equipos">
                                 <div class="slider-caption visible-md visible-lg">
-                                    <h2>Calidad en equipos</h2>
-                                    <p>Mejores equipos en el mercado</p>
-                                    <a href="#portfolio" class="slider-btn">Equipos</a>
+                                    <h2>Calidad en equipos gps</h2>
+                                    <p>Mejores equipos gps en el mercado</p>
+                                    <a href="#EquiposGPS" class="slider-btn">Equipos gps</a>
                                 </div>
                             </li>
                                 <li>
@@ -145,7 +162,16 @@
                                     <div class="slider-caption visible-md visible-lg">
                                         <h2>Soporte a clientes</h2>
                                         <p>Fácil y rapido 24/7</p>
-                                        <a href="#contact" class="slider-btn">soporte </a>
+                                        <a href="#contacto" class="slider-btn">soporte</a>
+                                    </div>
+                                </li>
+                                 <li>
+                                    <div class="overlay"></div>
+                                    <img src="images/slide/solucionesm2m.jpg" alt=">soluciones m2m">
+                                    <div class="slider-caption visible-md visible-lg">
+                                        <h2>CONECTIVIDAD Y CONTROL</h2>
+                                        <p>Soluciones m2m para tu empresa</p>
+                                        <a href="#simsM2M" class="slider-btn">SIMS M2M</a>
                                     </div>
                                 </li>
                         </ul>
@@ -160,23 +186,23 @@
                                               
 
 
-        <div class="content-section servf" id="services">
+        <div class="content-section servf" id="servicios">
             <div class="container">
             
             
                 <div class="row">
                     <div class="heading-section col-md-12 text-center">
-                        <h2>Nuestros Servicios</h2>
-                        <p>Ofrecemos soluciones tecnológicas para facilitar la vida de las personas y las empresas: Software, Soluciones IOT/M2M y asesoría técnica.  </p>
+                        <h1>servicios</h1>
+                        <p>Ofrecemos soluciones tecnológicas para facilitar la vida de las personas y las empresas: Software, Soluciones IOT/M2M y asesoría técnica.</p>
                     </div> <!-- /.heading-section -->
                 </div> <!-- /.row -->
                 
                 
                 
                 <div class="row">
+                   
                     <div class="col-md-3 col-sm-6">
                         <div class="service-item" id="service-1">
-                        
                          <a href="#software">
                             <div class="service-icon">
                              <i class="fa fa-file-code-o"></i>
@@ -185,8 +211,8 @@
                            <div class="service-content">
                          	  <br> <i class="fa fa-file-code-o fa-3x"></i>
                                 <div class="inner-service">
-                                   <h3>software</h3>
-                      <p>Desarrollamos Cloud software adaptables a las necesidades de las empresas de diversos sectores de México y Latinoamérica</p> 
+                                     <h3>software</h3>
+                     				 <p>Desarrollamos Cloud software adaptables a las necesidades de las empresas de diversos sectores de México y Latinoamérica</p> 
                                 </div></a>
                             </div> <!-- /.service-content -->
                         </div> <!-- /#service-1 -->
@@ -197,11 +223,10 @@
                     <div class="col-md-3 col-sm-6">
                         <div class="service-item" id="service-2">
                         
-                            <a href="#portfolio">
+                            <a href="#EquiposGPS">
                             <div class="service-icon">
                                 <i class="fa fa-paper-plane-o"></i>
                             </div> <!-- /.service-icon -->
-                            
                               <div class="service-content">
                              <br> <i class="fa fa-paper-plane-o"></i>
                                 <div class="inner-service">
@@ -216,7 +241,7 @@
                     <div class="col-md-3 col-sm-6">
                         <div class="service-item" id="service-3">
                         
-                         <a href="#sims"> 
+                         <a href="#simsM2M"> 
                             <div class="service-icon">
                                 <i class="fa fa-institution"></i>
                             </div> <!-- /.service-icon -->
@@ -236,11 +261,10 @@
                     <div class="col-md-3 col-sm-6">
                         <div class="service-item" id="service-4">
                         
-                        <a href="#contact"> 
+                        <a href="#contacto"> 
                             <div class="service-icon">
                                 <i class="fa fa-flask"></i>
                             </div> <!-- /.service-icon -->
-                            
                              <div class="service-content">
                               <br><i class="fa fa-flask fa-3x"></i>
                                 <div class="inner-service">
@@ -251,6 +275,7 @@
                             </div> <!-- /.service-content -->
                         </div> <!-- /#service-1 -->
                     </div> <!-- /.col-md-3 -->
+                    
                     <br> <br> <br> <br><br> <br> <br> <br><br> <br> <br> <br><br> <br> <br> <br>
                 </div> <!-- /.row -->
             </div> <!-- /.container -->
@@ -275,13 +300,13 @@
                 
                     <div class="team-member col-md-4 col-sm-6 text-center">
                         <h2 class="vision">Misión</h2>
-                        <p class="mision">Facilitar la vida de las personas con soluciones tecnológicas, a través del mejor equipo de profesionales                           altamente competitivo, motivado y visionario.</p>
+                        <p class="mision">Facilitar la vida de las personas con soluciones tecnológicas, a través del mejor equipo de profesionales  altamente competitivo, motivado y visionario.</p>
                     </div> <!-- /.team-member -->
                     
                     
                       <div class="team-member col-md-4 col-sm-6 text-center">
                         <h2 class="vision">Visión</h2>
-                        <p class="mision">Posicionar a PROSSEA como la empresa número uno en la innovación, creación y desarrollo de productos y                           servicios tecnológicos.</p>
+                        <p class="mision">Posicionar a PROSSEA como la empresa número uno en la innovación, creación y desarrollo de productos y servicios tecnológicos.</p>
                     </div> <!-- /.team-member -->
                     
                     
@@ -308,7 +333,7 @@
             <div class="container">
                 <div class="row">
                     <div class="heading-section col-md-12 text-center">
-                        <h2>SOFTWARE</h2>
+                        <h1>SOFTWARE</h1>
                         <p>Alta calidad en codigo y diseño</p>
                     </div> <!-- /.heading-section -->
                 </div> <!-- /.row -->
@@ -363,11 +388,11 @@
                                             <!--PROTAFOLIO / EQUIPOS GPS-->
 
                                             
-        <div class="content-section" id="portfolio">
+        <div class="content-section" id="EquiposGPS">
             <div class="container">
                 <div class="row">
                     <div class="heading-section col-md-12 text-center">
-                        <h2>EQUIPOS GPS</h2>
+                        <h1>EQUIPOS GPS</h1>
                         <p>La más avanzada tecnología en equipos GPS del mercado.</p>
                     </div> <!-- /.heading-section -->
                 </div> <!-- /.row -->
@@ -381,7 +406,7 @@
                                 <p class="equi">Utilizado comúnmente por automóviles, pero puede usarse para cualquier tipo de activo; estos dispositivos son los mejores para tener la información más completa, no solo de la posición en tiempo real de tu activo, también de la carga de batería, gasolina u otras características que pueden programarse en estos dispositivos.</p>
                                 <br>
                  <!-- <a  href="images/AVL.pdf" class="fancybox" data-fancybox-group="gallery" data-fancybox-width="1000px" data-fancybox-height="900px"> <i class="fa-search"></i></a>-->
- 						<a  href="simulador.html#tab1"  <i class="fa-search"></i></a>                               
+ 						<a  href="Cotizador.html#prod_GPSAVL"> <i class="fa-search"></i></a>                               
                                
                             </div> <!-- /.portfolio-overlay -->
                         </div> <!-- /.portfolio-thumb -->
@@ -394,7 +419,7 @@
                                 <h3>DISPOSITIVOS 3G</h3>
                                 <p>Nos referimos al 3G como la tercera generación de tecnología en la comunicación móvil, estos dispositivos son totalmente compatibles con esta red inalámbrica y aunque funcionan en cualquier parte del mundo, obtienen mayor precisión en ciertos lugares, pero siempre con la mayor rapidez para una fácil localización de tu equipo.</p>
                                 <br>
-                   <a  href="simulador.html#tab2"  <i class="fa-search"></i></a>
+                   <a  href="Cotizador.html#prod_GPS3G">  <i class="fa-search"></i></a>
                             </div> <!-- /.portfolio-overlay -->
                         </div> <!-- /.portfolio-thumb -->
                     </div> <!-- /.portfolio-item -->
@@ -407,7 +432,7 @@
                                 <p>Si deseas proveer protección extra a tus activos, contenedores o cajas, encontrarás las mejores opciones en nuestra sección de candados GPS. Asegúralos de robo o de quien los remueva sin autorización, así como también podrás configurar alarmas que tú recibirás cuando sucedan eventos específicos que programes.</p>
                               <!--  <a href="images/gallery/p7.jpg" data-rel="lightbox">-->
                                 <br>
-                                  <a  href="simulador.html#tab3"  <i class="fa-search"></i></a>
+                                  <a href="Cotizador.html#prod_GPSCandados"> <i class="fa-search"></i></a>
                             </div> <!-- /.portfolio-overlay -->
                         </div> <!-- /.portfolio-thumb -->
                     </div> <!-- /.portfolio-item -->
@@ -419,7 +444,7 @@
                                 <h3>Dispositivos personales</h3>
                                  <p>Mantén seguro lo que más te importa. Con nuestros dispositivos compactos y discretos podrás buscar a cualquier miembro de tu familia o mascota en un amplio rango y te permite establecer diferentes alertas para cualquier emergencia.</p>
                                 <br>
-                                    <a  href="simulador.html#tab4"  <i class="fa-search"></i></a>
+                                    <a  href="Cotizador.html#prod_GPSPersonales">  <i class="fa-search"></i></a>
                             </div> <!-- /.portfolio-overlay -->
                         </div> <!-- /.portfolio-thumb -->
                     </div> <!-- /.portfolio-item -->
@@ -434,25 +459,28 @@
                                  <p>En esta sección podrás encontrar desde baterías extras hasta cables de programación para tus dispositivos GPS, permitiendo que funcionen de la forma más eficaz y sin ningún inconveniente; si no encuentras lo que estás buscando, ¡podemos ayudarte a encontrarlo!</p>
                                 <br>
                                 
-                                 <a  href="simulador.html#tab5"  <i class="fa-search"></i></a>
+                                 <a  href="Cotizador.html#prod_GPSAccesorios">  <i class="fa-search"></i></a>
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item -->
+                    
+                     <div class="portfolio-item col-md-4 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="images/gallery/mascotas.jpg" alt="mascotas">
+                            <div class="portfolio-overlay">
+                                <h3>MASCOTAS</h3>
+                                 <p>Manten vigilados a tus mascotas/animales dentro y fuera de tu hogar, con nuestros dispositivos discretos y con tamaños adecuados para animales, podrás saber en todo momento en donde se encuentran y te brindan la posibilidad de actuar de forma rapida en caso de emergencia.</p>
+                                <br>
+                                
+                                 <a  href="Cotizador.html#prod_GPSMascotas">  <i class="fa-search"></i></a>
                             </div> <!-- /.portfolio-overlay -->
                         </div> <!-- /.portfolio-thumb -->
                     </div> <!-- /.portfolio-item -->
                     
                     
-                     <div class="portfolio-item col-md-4 col-sm-6">
-                         <a href="simulador.html"> <div class="portfolio-thumb">
-                            <img src="images/gallery/cotizacion.jpg" alt="cotizacion">
-                            <div class="portfolio-overlay">
-                                <h3>Cotización: </h3>
-                                 <p>Haz clic aquí y obtén los mejores precios, solo tienes que seleccionar el servicio o producto requerido, la cantidad deseada y nosotros nos ponemos en contacto lo más pronto posible.</p>
-                               
-                            </div> <!-- /.portfolio-overlay -->
-                        </div> <!-- /.portfolio-thumb --> </a>
-                    </div> <!-- /.portfolio-item -->
-                   
-                    
-                   
+                    <div class="col-md-12 center-block text-center">
+                   <br><a href="Cotizador.html" class="sim">Cotización de equipos gps</a>
+                    </div>
                     
                     
                   
@@ -475,12 +503,12 @@
 
 														    <!--SIM'S -->
 
-        <div class="content-section m2mf" id="sims">
+        <div class="content-section m2mf" id="simsM2M">
             <div class="container">
             
                 <div class="row">
                     <div class="heading-section col-md-12 text-center">
-                        <h2>Soluciones M2M</h2>
+                        <h1>Soluciones M2M</h1>
                         
                     </div> <!-- /.heading-section -->
                 </div> <!-- /.row -->
@@ -547,7 +575,7 @@
                     </div> <!-- /.col-md-4 -->
                    
                     <div class="col-md-12 center-block text-center">
-                    <br><br><a href="simulador.html#tab6" class="sim">Cotización de SIMs</a>
+                    <br><br><a href="Cotizador.html#prod_SIMSM2M" class="sim">Cotización de SIMs</a>
                     </div>
                     
                     
@@ -563,11 +591,11 @@
 
                                       <!--CONTÁCTANOS-->
 
-        <div class="content-section" id="contact">
+        <div class="content-section" id="contacto">
             <div class="container">
                 <div class="row">
                     <div class="heading-section col-md-12 text-center">
-                        <h2>¡CONTÁCTANOS!</h2>
+                        <h1>¡CONTÁCTANOS!</h1>
                         <p>mandanos un mensaje</p>
                     </div> <!-- /.heading-section -->
                 </div> <!-- /.row -->
@@ -581,7 +609,7 @@
                  
                  <div class="col-md-6 col-sm-6">
                         <div class="contact-form">   
-                            <form method="post" name="contactform" id="contactform" action="form.php">
+                            <form method="post" name="contactform" id="contactform" action="formContacto.php">
                                 <p>
                                     <input name="name" type="text" id="name" placeholder="Nombre" required>
                                 </p>
@@ -589,15 +617,15 @@
                                     <input name="email" type="email" id="email" placeholder="Correo" required> 
                                 </p>
                                 <p>
+                                    <input name="phone" type="number" id="phone" placeholder="Teléfono" required> 
+                                </p>
+                                <p>
                                     <input name="subject" type="text" id="subject" placeholder="Asunto" required> 
                                 </p>
                                 <p>
                                     <textarea name="message" id="comments" placeholder="Mensaje" required></textarea>    
                                 </p>
-                                <p>
-                                <br>
-                               <!-- <div class="g-recaptcha" data-sitekey="6LctMhEUAAAAAD_u0gKbkCN1EBXO3jhhkFDoUu8N"></div>-->
-                                 </p>
+                                
                                 <input type="submit" name="submit" class="mainBtn" id="submit" value="Mandar Mensaje">
                             </form>
                         </div> <!-- /.contact-form -->
@@ -684,7 +712,7 @@
                         <a href="#top" id="go-top">Ir arriba</a>
                     </div> <!-- /.text-center -->
                 </div> <!-- /.row -->
-            </div> <!-- /.container -->
+            </div> <!-- /.Rca8520AvC -->
         </div> <!-- /#footer -->
         
         
@@ -708,12 +736,6 @@ $zoho.salesiq.ready=function(embedinfo){$zoho.salesiq.floatbutton.visible("");}
         <script src="js/vendor/jquery.gmap3.min.js"></script>
         
       
-
-<!--<script type="text/javascript">
-var $zoho= $zoho || {salesiq:{values:{},ready:function(){}}};var d=document;s=d.createElement("script");s.type="text/javascript";
-s.defer=true;s.src="https://salesiq.zoho.com/titanium/float.ls?embedname=titanium";
-t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);
-</script>-->
    
 
         <!-- Google Map Init-->

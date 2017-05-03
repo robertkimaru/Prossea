@@ -6,7 +6,7 @@ function goBack() {
 				
 // Javascript to enable link to tab
 var hash = document.location.hash;
-var prefix = "tab_";
+var prefix = "prod_";
 if (hash) {
     $('.nav-tabs a[href='+hash.replace(prefix,"")+']').tab('show');
 } 
